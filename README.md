@@ -1,2 +1,15 @@
 # frc4669.github.io
-This is the repository for the HTML, CSS and JS of frc4669.github.io, the Galileo Robotics team's website.
+
+The official website of FRC (First Robotics Competition) team 4669, Galileo Robotics.
+
+## Local Development
+
+Run the development server (server refreshes upon modification of any files in this directory):
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
