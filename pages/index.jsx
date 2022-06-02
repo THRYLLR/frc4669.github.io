@@ -53,7 +53,7 @@ class TitleBar extends react.Component {
         this.state = {
             text: this.props.text
         };
-
+        this.update = this.update.bind(this);
     }
 
     update(text) {
@@ -66,7 +66,7 @@ class TitleBar extends react.Component {
         return (
             <div>
                 <h1>{this.state.text}</h1>
-                <Input onSubmit = {(t) => {this.update(t)}}/>
+                <Input onSubmit = {this.update} />
             </div>
         );
     }
