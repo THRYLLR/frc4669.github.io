@@ -1,0 +1,17 @@
+
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    background: var(--nav-bar-color);
+    height: var(--nav-bar-height);
+}
+
+.section {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    /* padding: 10px; */
+
+    align-items: center;
+}
