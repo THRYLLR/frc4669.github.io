@@ -1,9 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,700&display=swap');
+
+:root {
+  --nav-bar-height: 82px; 
+  --nav-bar-color: hsl(267, 100%, 50%);
+  --nav-bar-font: 20px Rajdhani;
+  
+  --dropdown-inner-item-spacing: 10px
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font: 14px/1.5 Rajdhani, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #ffff;
+  font-weight: 300;
+  background-image: url("../public/images/backgroundpattern.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 a {
@@ -13,4 +28,47 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.spacer {
+  background: none;
+  flex-grow: 1;
+}
+
+.inherit {
+  all: inherit;
+}
+
+.fit-content {
+  width: fit-content;
+  height: fit-content;
+}
+
+
+/* Flex */
+.flex-hori .flex-vert {
+  display: flex;
+}
+
+.flex-hori {
+  flex-direction: row;
+}
+
+.flex-vert {
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: Rajdhani;
+  src: url('../public/fonts/Rajdhani/Rajdhani-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 300;
+  src: url('../public/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
 }
